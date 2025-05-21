@@ -2,6 +2,22 @@
 // Main JavaScript File
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Sticky Header
+    const header = document.querySelector('header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+        
+        lastScroll = currentScroll;
+    });
+    
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');

@@ -6,12 +6,13 @@
 /* Enhanced Floating Contact Buttons */
 .floating-contact {
     position: fixed;
-    bottom: 30px;
+    top: 75vh; /* Position at 3/4 of viewport height */
     right: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     z-index: 999;
+    transform: translateY(-50%); /* Center the buttons vertically */
 }
 
 .whatsapp-btn, .call-btn {
