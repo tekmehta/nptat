@@ -1,0 +1,275 @@
+/* 
+   Nepal Pashupatinath Tour and Travels
+   Featured Booking Options Styles
+*/
+
+/* Featured Booking Cards */
+.featured-booking-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.featured-booking-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.featured-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.featured-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.featured-card-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.featured-card:hover .featured-card-img img {
+    transform: scale(1.1);
+}
+
+.featured-card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.featured-card-content {
+    padding: 25px;
+}
+
+.featured-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.featured-card-description {
+    color: var(--gray-color);
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.featured-card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.featured-card-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.featured-card-price span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.featured-card-rating {
+    display: flex;
+    align-items: center;
+}
+
+.featured-card-rating i {
+    color: var(--secondary-color);
+    margin-right: 3px;
+}
+
+.featured-card-rating span {
+    color: var(--gray-color);
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.featured-card-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-card-feature {
+    background-color: #f8f9fa;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: var(--dark-color);
+}
+
+.featured-card-feature i {
+    margin-right: 5px;
+    color: var(--primary-color);
+}
+
+.featured-card-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.featured-card-button:hover {
+    background-color: #d32836;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+    color: white;
+}
+
+/* Category Tabs */
+.booking-category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    padding: 10px 25px;
+    background-color: #f8f9fa;
+    border-radius: 50px;
+    font-weight: 500;
+    color: var(--dark-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.category-tab:hover {
+    background-color: #e9ecef;
+}
+
+.category-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-tab i {
+    margin-right: 8px;
+}
+
+/* Quick Search */
+.quick-search {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.quick-search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.quick-search-input {
+    flex: 1 0 200px;
+}
+
+.quick-search-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.quick-search-input input,
+.quick-search-input select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.quick-search-input input:focus,
+.quick-search-input select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+.quick-search-button {
+    align-self: flex-end;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 24px;
+}
+
+.quick-search-button:hover {
+    background-color: #d32836;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .featured-booking-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-search-form {
+        flex-direction: column;
+    }
+    
+    .quick-search-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .booking-category-tabs {
+        gap: 10px;
+    }
+    
+    .category-tab {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

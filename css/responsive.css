@@ -1,0 +1,410 @@
+/* 
+   Nepal Pashupatinath Tour and Travels
+   Mobile Responsiveness Validation Styles
+*/
+
+/* Mobile-First Approach Enhancements */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .services-grid,
+    .destination-slider,
+    .testimonial-slider,
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    header .container {
+        padding: 10px 20px;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo p {
+        font-size: 0.8rem;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: white;
+        transition: all 0.3s ease;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-menu ul li {
+        margin: 15px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .services-grid,
+    .destination-slider,
+    .testimonial-slider,
+    .footer-content,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .tab-header {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1 0 50%;
+    }
+    
+    .whatsapp-btn span, .call-btn span {
+        display: none;
+    }
+    
+    .whatsapp-btn, .call-btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .whatsapp-btn i, .call-btn i {
+        margin-right: 0;
+        font-size: 1.5rem;
+    }
+    
+    .back-to-top {
+        left: 20px;
+        bottom: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .booking-category-tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .category-tab {
+        flex: 1 0 calc(50% - 10px);
+        text-align: center;
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+    
+    .quick-search-form {
+        flex-direction: column;
+    }
+    
+    .quick-search-button {
+        width: 100%;
+    }
+    
+    .contact-cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title p {
+        font-size: 0.9rem;
+    }
+    
+    .service-card,
+    .destination-card,
+    .testimonial-card,
+    .contact-card {
+        padding: 20px;
+    }
+    
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .tab-btn {
+        flex: 1 0 100%;
+        padding: 10px;
+    }
+    
+    .tab-content {
+        padding: 20px 15px;
+    }
+    
+    .contact-form-container {
+        padding: 20px 15px;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-icon i {
+        font-size: 20px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+    
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Touch-specific enhancements */
+.touch-device .btn,
+.touch-device .btn-book,
+.touch-device .btn-details,
+.touch-device .btn-submit,
+.touch-device .tab-btn,
+.touch-device .nav-menu ul li a {
+    padding: 12px 25px; /* Larger touch targets */
+}
+
+.touch-device .form-group input,
+.touch-device .form-group select,
+.touch-device .form-group textarea {
+    padding: 15px;
+    font-size: 16px; /* Prevent zoom on iOS */
+}
+
+/* Orientation-specific styles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .nav-menu {
+        height: 80vh;
+    }
+}
+
+/* High-resolution screens */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.3rem;
+    }
+    
+    .section-title h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .floating-contact,
+    .back-to-top,
+    .menu-toggle,
+    .hero-scroll-down,
+    .slider-controls,
+    .tab-header,
+    .booking-form button,
+    .contact-form button {
+        display: none !important;
+    }
+    
+    header {
+        position: static;
+        box-shadow: none;
+    }
+    
+    .hero {
+        height: auto;
+        color: black;
+        background: none !important;
+    }
+    
+    .hero-content {
+        color: black;
+    }
+    
+    .hero-content h1,
+    .hero-content p {
+        text-shadow: none;
+    }
+    
+    .service-card,
+    .destination-card,
+    .testimonial-card,
+    .contact-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .footer {
+        background-color: white;
+        color: black;
+    }
+    
+    .footer-content a,
+    .footer-bottom a {
+        color: black;
+    }
+}
+
+/* Accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Focus visible only when using keyboard */
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
